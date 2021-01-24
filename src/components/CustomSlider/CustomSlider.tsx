@@ -22,28 +22,36 @@ const CustomSlider = () => {
       <div className="slider-container">
         <Slider {...(settings as any)}>
           <div className="slider-item">
+            <div className="slider-img">
             <img src={slide1} alt="slide" />
+            </div>
             <div className="slider-text">
               <h2>Tokenplace</h2>
               <p>Multi-exchange Trading Terminal</p>
             </div>
           </div>
           <div className="slider-item">
+          <div className="slider-img">
             <img src={slide2} alt="slide" />
+            </div>
             <div className="slider-text">
               <h2>Fund Platform</h2>
               <p>Hedge funds wealth management</p>
             </div>
           </div>
           <div className="slider-item">
+          <div className="slider-img">
             <img src={slide3} alt="slide" />
+            </div>
             <div className="slider-text">
               <h2>Noviscient</h2>
               <p>Management Platform</p>
             </div>
           </div>
           <div className="slider-item">
+          <div className="slider-img">
             <img src={slide4} alt="slide" />
+            </div>
             <div className="slider-text">
               <h2>Merge Data Review</h2>
               <p>

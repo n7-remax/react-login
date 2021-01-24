@@ -9,6 +9,10 @@
   margin: 0 auto;
 }
 
+.login {
+  margin: 0 82px;
+}
+
 .logo {
   margin-top: 51px;
 }
@@ -62,6 +66,11 @@
   height: 54px;
   transition: 0.3s;
 }
+.input input[type="email"],
+.input input[type="password"] {
+  font-weight: 600;
+  font-size: 14px;
+}
 
 .error-password,
 .error-email {
@@ -85,7 +94,7 @@
   animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
-  background: #FFFFFF;
+  background: #ffffff;
   perspective: 1000px;
   transition: 0.3s;
 }
@@ -188,7 +197,7 @@
 }
 
 .slider {
-  margin: 20px 82px 20px 20px;
+  margin: 20px 0px 20px 20px;
 }
 
 .slider-container {
@@ -202,7 +211,6 @@
   background-image: url("../assets/bg-shapes.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
   border-radius: 8px;
 }
 .slick-slide img {
@@ -211,6 +219,23 @@
   margin: 0 auto;
 }
 
+.slider-img {
+  position: relative;
+}
+.slider-img::before {
+  position: absolute;
+  content: "";
+  width: 512px;
+  height: 100%;
+  background: rgba(0, 46, 123, 0.7);
+  filter: blur(25px);
+  z-index: -3;
+  margin-left: auto;
+  margin-right: auto;
+  top: 40px;
+  left: 0;
+  right: 0;
+}
 .slider-text {
   margin-top: 63px;
   margin-bottom: 60px;
@@ -227,6 +252,43 @@
   font-size: 14px;
 }
 
-.slick-dots li.slick-active button:before , .slick-dots li button:before {
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
   color: #fff !important;
+}
+
+@media screen and (max-width: 1240px) {
+  .login {
+    margin: 0 20px;
+  }
+
+  .slider {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+  .slider {
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+  }
+  .slider-container {
+    max-width: unset;
+  }
+
+  .slider-container {
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .slider {
+    display: none;
+  }
+  .login {
+    margin: 10px;
+  }
 }
