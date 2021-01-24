@@ -1,0 +1,165 @@
+.container {
+  display: flex;
+  justify-content: center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.logo {
+  margin-top: 51px;
+}
+
+.sign-up {
+  margin-top: 112px;
+  margin-bottom: 64px;
+}
+.sign-up h1 {
+  font-size: 28px;
+  font-weight: bold;
+}
+.sign-up p a {
+  text-decoration: none;
+  color: #065bea;
+  transition: 0.3s;
+}
+.sign-up p a:hover {
+  color: #0a4ab6;
+  transition: 0.3s;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  position: relative;
+}
+.input a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #75777a;
+  position: absolute;
+  top: 47px;
+  right: 14px;
+}
+
+.input input {
+  background: #f6f7fa;
+  border: 1px solid #065bea;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 18px 0 19px 20px;
+  height: 54px;
+}
+
+.error-password,
+.error-email {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  color: #ff4b26;
+}
+.input label {
+  margin-bottom: 14px;
+}
+.input input:focus {
+  outline: none;
+}
+
+.error {
+  border: 1px solid #ff4b26 !important;
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  transition: 0.3s;
+}
+.complete {
+  border: 1px solid #6fcf97 !important;
+  transition: 0.3s;
+}
+
+.btn {
+  position: relative;
+  color: #fff;
+  background: #065bea;
+  border-radius: 8px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 222px;
+  transition: 0.7s;
+  z-index: 1;
+}
+
+.btn::before {
+  width: 100%;
+  height: 30px;
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: 0;
+  background: #065bea;
+  opacity: 0.83;
+  filter: blur(20px);
+  border-radius: 8px;
+  transition: 0.7s;
+  z-index: -1;
+}
+.btn:hover {
+  background: #0451d2;
+  transition: 0.7s;
+}
+
+.disabled {
+  background: #c6d0e0;
+}
+.disabled:hover {
+  background: #c6d0e0;
+  cursor: default;
+  transition: 0.7s;
+}
+
+.display-none {
+  display: none;
+}
+
+.links a {
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #75777a;
+  margin-right: 25px;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(0px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}

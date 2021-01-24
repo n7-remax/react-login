@@ -4,7 +4,8 @@ import Login from "./Login/Login";
 function App() {
   return (
     <div className="App">
-      <div>
+      <div className="container">
+        <div>Slider</div>
         <Login />
       </div>
     </div>
