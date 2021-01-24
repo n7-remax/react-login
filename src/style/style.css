@@ -55,6 +55,12 @@
   position: absolute;
   top: 47px;
   right: 14px;
+  transition: 0.3s;
+}
+
+.input a:hover {
+    color: #333333;
+    transition: 0.3s;
 }
 
 .input input {
@@ -171,6 +177,11 @@
   line-height: 24px;
   color: #75777a;
   margin-right: 25px;
+  transition: 0.3s;
+}
+.links a:hover {
+  color: #333333;
+  transition: 0.3s;
 }
 
 @keyframes shake {
