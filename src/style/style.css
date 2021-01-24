@@ -1,3 +1,7 @@
+* {
+  outline: none;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -162,4 +166,48 @@
   60% {
     transform: translate3d(4px, 0, 0);
   }
+}
+
+.slider {
+  margin: 20px 82px 20px 20px;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  background: #065bea;
+  background-image: url("../assets/bg-shapes.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  border-radius: 8px;
+}
+.slick-slide img {
+  width: 512px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.slider-text {
+  margin-top: 63px;
+  margin-bottom: 60px;
+  color: #fff;
+  text-align: center;
+}
+
+.slider-text h2 {
+  font-weight: 600;
+  font-size: 20px;
+}
+.slider-text p {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.slick-dots li.slick-active button:before , .slick-dots li button:before {
+  color: #fff !important;
 }
